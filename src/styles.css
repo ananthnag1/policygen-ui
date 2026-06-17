@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import PrimeFlex for layout utilities */
+@import "primeflex/primeflex.css";
+
+/* 1. Global Reset & Foundation */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light gray to make cards pop */
+    color: #1e293b;            /* Professional dark slate, not pure black */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 2. Grid & Border Styling */
+.grid {
+    padding: 1rem;
+    gap: 1rem; /* Creates the gutter spacing between cards */
+}
+
+.surface-border {
+    border-color: #e2e8f0 !important; /* Lighter, cleaner border */
+    border-radius: 8px;              /* Soft edges */
+    background: #ffffff;
+}
+
+/* 3. Typography Hierarchy */
+h1, h2, h3, h4 {
+    color: #0f172a;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* 4. Scrollbar refinement for panels with long content */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}

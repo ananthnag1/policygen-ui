@@ -1,0 +1,6 @@
+:host {
+    display: block;
+    min-height: 250px; /* Adjust this to make your panels taller if you want */
+    background-color: #ffffff;
+    /* ... rest of your card styles */
+}

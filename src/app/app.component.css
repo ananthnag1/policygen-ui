@@ -1,0 +1,9 @@
+/* Update your app.component.html or CSS */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem; /* This sets the gap for BOTH rows and columns */
+    padding: 1.5rem;
+    height: auto; /* Changed from 100vh to auto */
+    align-content: start; /* Forces rows to sit together at the top */
+}
