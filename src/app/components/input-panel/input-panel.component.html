@@ -1,2 +1,19 @@
-<p>input-panel</p>
-<p-select [options]="policytype" [(ngModel)]="policy" />
+<div class="card flex flex-column gap-3">
+    <h4 style="margin-bottom: 0;">Test Scenario Execution</h4>
+    <p class="text-secondary" style="margin-top: 0; font-size: 0.9rem;">Select test scenario</p>
+    
+    <p-select 
+        class="w-full"
+        [options]="policytype" 
+        [(ngModel)]="selectedPolicy" 
+        optionLabel="label" 
+        placeholder="Policy type" 
+        [showClear]="true" />
+
+    <p-button 
+        label="Run Scenario" 
+        icon="pi pi-play" 
+        styleClass="p-button-success w-full"
+        [disabled]="!selectedPolicy" 
+        (onClick)="runScenario()" />
+</div>
